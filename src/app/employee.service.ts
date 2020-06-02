@@ -12,6 +12,7 @@ export class EmployeeService {
     return this.http.get(url + "getEmployeeWhoOrganizeNextEvent");
   }
 
+  
   getEmployeesSortedLastEventDate(url : string){
     return this.http.get(url + "getEmployeesSortedLastEventDate");
   }
