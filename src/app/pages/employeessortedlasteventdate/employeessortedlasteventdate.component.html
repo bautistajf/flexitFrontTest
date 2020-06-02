@@ -1,0 +1,22 @@
+<h1>Employees Sorted last event date</h1>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>  
+     <th scope="col">Code</th>
+     <th scope="col">Name</th>
+     <th scope="col">Last Event Date </th>
+    
+</tr>  
+</thead>
+<tbody>
+    <tr *ngFor="let item of employees"> 
+        <th scope="row">
+            {{item.code}}
+        </th>
+        <td>{{item.name}}</td>
+        <td>{{item.lastEventDate | date: 'yyyy-MM-dd'}}</td>
+    </tr>
+
+</tbody>
+</table>
